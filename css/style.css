@@ -1,0 +1,132 @@
+html:root {
+    --black: #4D4C59;
+    --purple: #6C63FF;
+    --light-grey: #C8C8C8;
+    --text-color: #9C9AB6;
+  }
+
+  html {
+    font-size: 62.5%;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: "Poppins", Helvetica, sans-serif;
+}
+
+.box-container {
+    display: grid;
+    flex-grow: 1;
+    grid-template-columns: 1fr 1fr;
+}
+
+.bottom-image {
+    width: 100vw;
+}
+
+.section-left {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.section-rigth {
+    width: 100%;
+}
+
+.section-rigth img {
+    margin-left: 5rem;
+    margin-top: 1rem;
+}
+
+.count-down {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.countdown-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.countdown-el {
+    text-align: center;
+}
+
+h1 {
+    text-transform: uppercase;
+    color: var(--purple);
+    font-size: 2.4rem;
+    font-weight: bold;
+    letter-spacing: 0.5rem;
+    margin-bottom: 20px;
+}
+
+.countdown-container span {
+    color: var(--light-grey);
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.text {
+    text-align: center;
+    font-size: 6.4rem;
+    color: var(--black);
+}
+
+.divider {
+    font-size: 6.4rem;
+    color: var(--black);
+    flex-grow: 1;
+    text-align: center;
+    position: relative;
+    transform: translateY(8px);
+}
+
+.section-left > p {
+    color: var(--light-grey);
+    font-size: 1.6rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+.section-left button {
+    margin: 0 auto;
+    padding: 10px;
+    width: 30%;
+    background-color: var(--purple);
+    border-radius: 6px;
+    border: none;
+    font-size: 1.6rem;
+    color: #fff
+}
+
+@media (max-width: 720px) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .top-image, .bottom-image, .rocket {
+        display: none;
+    }
+
+}
+
+
