@@ -1,10 +1,14 @@
+//GETTING THE ELEMENTS IN THE HTML DOCUMENT
 const daysEl = document.getElementById("days");
 const hoursEl = document.getElementById("hours");
 const minutesEl = document.getElementById("minutes");
 const secondsEl = document.getElementById("seconds");
 
-const releaseDate = "1 Jan 2023";
+//DEFINING RELEASE DATE
+const releaseDate = "01 Jun 2023";
 
+
+//COUNTDOWN CLOCK FUNCTION
 function countdown() {
 
     const newReleaseDate = new Date(releaseDate);
@@ -21,13 +25,13 @@ function countdown() {
     hoursEl.innerHTML = formatTime(hours);
     minutesEl.innerHTML = formatTime(minutes);
     secondsEl.innerHTML = formatTime(seconds);
-
 }
 
+//FUNCTION TO FORMAT THE CLOCK
 function formatTime(time) {
     return time < 10 ? `0${time}` : time;
 }
 
+//CALLING THE FUNCTION
 countdown();
-
 setInterval(countdown, 1000);

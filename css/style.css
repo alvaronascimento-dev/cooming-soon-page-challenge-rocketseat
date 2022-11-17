@@ -18,6 +18,7 @@ html:root {
 body {
     margin: 0 auto;
     min-height: 100vh;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -48,6 +49,7 @@ body {
 .section-rigth img {
     margin-left: 5rem;
     margin-top: 1rem;
+    animation: foguete 1s ease alternate infinite;
 }
 
 .count-down {
@@ -64,6 +66,7 @@ body {
 }
 
 .countdown-el {
+    width: 100px;
     text-align: center;
 }
 
@@ -112,8 +115,17 @@ h1 {
     border-radius: 6px;
     border: none;
     font-size: 1.6rem;
-    color: #fff
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
+
+.section-left button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    transform: scale(1.02);
+}
+
+
 
 @media (max-width: 720px) {
 
@@ -126,7 +138,12 @@ h1 {
     .top-image, .bottom-image, .rocket {
         display: none;
     }
+}
 
+@keyframes foguete {
+    100% {
+        transform: translateY(10px);
+    }
 }
 
 
