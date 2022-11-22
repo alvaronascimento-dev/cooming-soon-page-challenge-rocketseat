@@ -5,23 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&family=Noto+Sans:wght@400;700&family=Poppins:wght@300;400;500&family=Righteous&family=Sarala:wght@400;700&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width:768px)" href="css/mobile.css">
     <title>Contagem de Lançamento</title>
 </head>
 <body>
-    <img src="images/top-image.svg" alt="Imagem do Topo" class="top-image">
-    <div class="box-container">
+    <div class="container">
+        <img src="images/top-image.svg" alt="Imagem do Topo" class="top-image">
         <section class="section-left">
-            <div class="count-down">
+            <div class="countdown-container">
                 <h1>Pronto para lançar em...</h1>
-                <div class="countdown-container">
+                <div class="count-down">
                     <div class="countdown-el days-c">
                         <span>Dias</span>
                         <p class="text" id="days">0</p>
                     </div>
 
                     <div class="divider">:</div>
-
+                    
                     <div class="countdown-el hours-c">
                         <span>Horas</span>
                         <p class="text" id="hours">0</p>
@@ -48,8 +49,8 @@
         <section class="section-rigth">
             <img class="rocket" src="images/rocket.svg" alt="Fogute">
         </section>
+        <img src="images/bottom-image.svg" alt="" class="bottom-image">
     </div>
-    <img src="images/bottom-image.svg" alt="" class="bottom-image">
     <script src="js/scrip.js"></script>
 </body>
 </html>
