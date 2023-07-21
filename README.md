@@ -13,4 +13,4 @@ Criar uma página de **cooming soon** para o lançamento de um site, produto ou 
 ## :thumbsup: Resultado final
 <h3>Quer ver :eyes: como ficou o resultado final?<br>
 da uma olhada no link da página: :point_down:</h3>
-<h3>:smirk::point_right: <a href="https://alvaronascimento04.github.io/cooming-soon-page-challenge-rocketseat" target="_blank">Página de Lançamento</a></h3>
+<h3>:smirk::point_right: <a href="https://alvaronascimento-dev.github.io/cooming-soon-page-challenge-rocketseat" target="_blank">Página de Lançamento</a></h3>
