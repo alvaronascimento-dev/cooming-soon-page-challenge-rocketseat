@@ -5,7 +5,7 @@ const minutesEl = document.getElementById("minutes");
 const secondsEl = document.getElementById("seconds");
 
 //DEFINING RELEASE DATE
-const releaseDate = "01 Jun 2023";
+const releaseDate = "01 Jan 2030";
 
 
 //COUNTDOWN CLOCK FUNCTION
